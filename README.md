@@ -29,7 +29,7 @@ Users should be able to:
 
 |Dark Theme|Light Theme|
 |-----------|--------------|
-|<img src="./design/Dark-theme-desktop.png"/>|<img src="./design/Light-theme-desktop.png"/>|
+|<img src="./design/Desktop-dark-theme.png"/>|<img src="./design/Light-theme-desktop.png"/>|
 |<img src="./design/Dark-theme-mobile.png"/>|<img src="./design/Light-theme-mobile.png"/>|
 
 
