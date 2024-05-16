@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./myscript.js"></script>
+    <title>Social Media Dashboard</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="dark">
+
+    <div class="top-bg"></div>
+    <main class="main-container">
+      <header class="headline">
+        <div class="info">
+          <div class="headline-text">Social Media Dashboard</div>
+          <div class="total-followers">Total Followers: 23,004</div>
+        </div>
+        <fieldset
+          class="toggle-mode"
+          aria-label="theme switcher"
+          role="radiogroup"
+        >
+          <label for="dark">Dark Mode</label>
+          <span class="toggle__wrapper" id="toggle__wrapper">
+            <input type="radio" value="light" name="theme" id="dark"/>
+            <input type="radio" name="theme" id="light" />
+            <span aria-hidden="true" class="toggle__background"></span>
+            <span aria-hidden="true" class="toggle__switcher"></span>
+          </span>
+        </fieldset>
+      </header>
+      <div class="followers-card">
+        <div class="full-card" id="facebook-card">
+          <div class="card-color-line" id="facebook-card-color-line"></div>
+          <div class="card-platform">
+            <img
+              class="icon facebook-icon"
+              src="./images/icon-facebook.svg"
+              alt="facebook-icon"
+            />
+            <div class="card-title">@nathanf</div>
+          </div>
+          <div class="count-big">1987</div>
+          <div class="card-label-space">Followers</div>
+          <div class="card-change-up-down">
+            <img
+              class="card-up-icon"
+              src="./images/icon-up.svg"
+              alt="icon-down"
+            />
+            <div class="card-change card-change-up">12 Today</div>
+          </div>
+        </div>
+
+
+        <div class="full-card" id="twitter-card">
+          <div class="card-color-line" id="twitter-card-color-line"></div>
+          <div class="card-platform">
+            <img
+              class="icon twitter-icon"
+              src="./images/icon-twitter.svg"
+              alt="twitter-icon"
+            />
+            <div class="card-title">@nathanf</div>
+          </div>
+          <div class="count-big">1044</div>
+          <div class="card-label-space">Followers</div>
+          <div class="card-change-up-down">
+            <img
+              class="card-up-icon"
+              src="./images/icon-up.svg"
+              alt="icon-down"
+            />
+            <div class="card-change card-change-up">99 Today</div>
+          </div>
+        </div>
+        <div class="full-card" id="instagram-card">
+          <div class="card-color-line" id="instagram-card-color-line"></div>
+          <div class="card-platform">
+            <img
+              class="icon"
+              src="./images/icon-instagram.svg"
+              alt="instagram-icon"
+            />
+            <div class="card-title">@realnathanf</div>
+          </div>
+          <div class="count-big">11k</div>
+          <div class="card-label-space">Followers</div>
+          <div class="card-change-up-down">
+            <img
+              class="card-up-icon"
+              src="./images/icon-up.svg"
+              alt="icon-down"
+            />
+            <div class="card-change card-change-up">1099 Today</div>
+          </div>
+        </div>
+        <div class="full-card" id="youtube-card">
+          <div class="card-color-line" id="youtube-card-color-line"></div>
+          <div class="card-platform">
+            <img
+              class="icon"
+              src="./images/icon-youtube.svg"
+              alt="youtube-icon"
+            />
+            <div class="card-title">Nathan F.</div>
+          </div>
+          <div class="count-big">8239</div>
+          <div class="card-label-space">Subscribers</div>
+          <div class="card-change-up-down">
+            <img
+              class="card-down-icon"
+              src="./images/icon-down.svg"
+              alt="icon-down"
+            />
+            <div class="card-change card-change-down">144 Today</div>
+          </div>
+        </div>
+      </div>
+
+<!-- -----------------Overview Card----------------------------- -->
+      <div class="overview">
+        <div class="headline-text">Overview - Today</div>
+        <div class="overview-card">
+
+          <div class="full-card overview-card">
+            <div class="card-grid">
+            <div class="card-title">Page Views</div>
+            <div class="card-icon">
+              <img
+              class="facebook-icon"
+              src="./images/icon-facebook.svg"
+              alt="facebook-icon"
+            />
+            </div>
+            <div class="overview-numbers">87</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-up.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-up">3%</div>
+            </div>
+          </div>
+        </div>
+
+          <div class="full-card overview-card">
+          <div class="card-grid">
+            <div class="card-title">Likes</div>
+            <div class="card-icon">
+              <img
+              class="facebook-icon"
+              src="./images/icon-facebook.svg"
+              alt="facebook-icon"
+            />
+            </div>
+            <div class="overview-numbers">52</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-up.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-up">2%</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="full-card overview-card">
+          <div class="card-grid">
+            <div class="card-title">Likes</div>
+            <div class="card-icon">
+              <img
+              class="instagram-icon"
+              src="./images/icon-instagram.svg"
+              alt="facebook-icon"
+            />
+            </div>
+            <div class="overview-numbers">5462</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-up.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-up">2257%</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="full-card overview-card">
+          <div class="card-grid">
+            <div class="card-title">Profile Views</div>
+            <div class="card-icon">
+              <img
+              class="instagram-icon"
+              src="./images/icon-instagram.svg"
+              alt="facebook-icon"
+            />
+            </div>
+            <div class="overview-numbers">52k</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-up.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-up">1375%</div>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="full-card overview-card">
+          <div class="card-grid">
+            <div class="card-title">Retweets</div>
+            <div class="card-icon">
+              <img
+              class="twitter-icon"
+              src="./images/icon-twitter.svg"
+              alt="facebook-icon"
+            />
+            </div>
+            <div class="overview-numbers">117</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-up.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-up">303%</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="full-card overview-card">
+          <div class="card-grid">
+            <div class="card-title">Likes</div>
+            <div class="card-icon">
+              <img
+              class="twitter-icon"
+              src="./images/icon-twitter.svg"
+              alt="facebook-icon"
+            />
+            </div>
+            <div class="overview-numbers">507</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-up.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-up">553%</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="full-card overview-card">
+          <div class="card-grid">
+            <div class="card-title">Likes</div>
+            <div class="card-icon">
+              <img
+              class="youtube-icon"
+              src="./images/icon-youtube.svg"
+              alt="youtube-icon"
+            />
+            </div>
+            <div class="overview-numbers">107</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-down.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-down">19%</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="full-card overview-card">
+          <div class="card-grid">
+            <div class="card-title">Likes</div>
+            <div class="card-icon">
+              <img
+              class="youtube-icon"
+              src="./images/icon-youtube.svg"
+              alt="youtube-icon"
+            />
+            </div>
+            <div class="overview-numbers">107</div>
+            <div class="overview-card-change">
+              <img
+                class="card-down-icon"
+                src="./images/icon-down.svg"
+                alt="icon-down"
+              />
+              <div class="card-change card-change-down">12%</div>
+            </div>
+          </div>
+          </div>
+ 
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
