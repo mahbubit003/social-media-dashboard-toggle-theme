@@ -197,6 +197,7 @@ input[type='radio']{
 
 .overview-card{
     height: 110px;
+    margin-top: 30px;
 }
 
 .card-grid{
